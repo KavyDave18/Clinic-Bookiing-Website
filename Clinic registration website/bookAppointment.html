@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="book.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+</head>
+<body>
+    
+    <form action="bookAppointment" method="post">
+        <h1>Book an Appointment</h1>
+        <!-- Doctor Selection -->
+        <div class="form-group">
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="" disabled selected>Select a doctor</option>
+                <!-- Example options (to be replaced with dynamic data from the backend) -->
+                <option value="Dr. John Doe">Dr. John Doe - Cardiologist</option>
+                <option value="Dr. Jane Smith">Dr. Jane Smith - Dermatologist</option>
+            </select>
+        </div>
+
+        <!-- Appointment Date -->
+        <div class="form-group">
+            <label for="appointmentDate">Select Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+        </div>
+
+        <!-- Appointment Time -->
+        <div class="form-group">
+            <label for="appointmentTime">Select Time:</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" required>
+        </div>
+
+        <!-- Patient Name -->
+        <div class="form-group">
+            <label for="patientName">Your Name:</label>
+            <input type="text" id="patientName" name="patientName" placeholder="Enter your name" required>
+        </div>
+
+        <!-- Patient Contact -->
+        <div class="form-group">
+            <label for="patientContact">Your Contact Number:</label>
+            <input type="tel" id="patientContact" name="patientContact" placeholder="Enter your contact number" required>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Book Appointment</button>
+    </form>
+</body>
+</html>

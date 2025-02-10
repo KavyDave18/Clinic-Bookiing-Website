@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Clinic Appointment System</h1>
+        <form action="login" method="post" class="login-form">
+            <div class="form-group">
+                <label for="username">Username or Email:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Log in</button>
+            </div>
+            <p class="register-link">
+                Don’t have an account?(patient) <a href="Pregistration.html">Register here</a>
+                <br>
+                Don’t have an account?(Doctor)<a href="Dregistration.html">Register here</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
